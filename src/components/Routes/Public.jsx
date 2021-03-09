@@ -2,7 +2,7 @@ import React from "react";
 import { Redirect, Route } from "react-router-dom";
 
 const Public = ({ component: Component, ...rest }) => {
-  const userLogged = true;
+  const userLogged = localStorage.getItem("email");
 
   if (userLogged === true) {
     return <Redirect to="/" />;
