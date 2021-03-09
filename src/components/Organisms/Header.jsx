@@ -7,6 +7,11 @@ const toggleMenu = () => {
   menu.current.classList.toggle("show");
 };
 
+const removeToken = () => {
+  localStorage.removeItem("email");
+  window.location = "/login";
+};
+
 const Header = () => (
   <header className="main-header">
     <div className="ed-grid s-grid-5 lg-grid-4">
@@ -19,7 +24,9 @@ const Header = () => (
         <nav className="main-menu" ref={menu}>
           <ul>
             <li>
-              <NavLink to="/">Inicio</NavLink>
+              <NavLink exact to="/">
+                Inicio
+              </NavLink>
             </li>
             <li>
               <NavLink to="/especialidades">Especialidades</NavLink>
@@ -29,6 +36,9 @@ const Header = () => (
             </li>
             <li>
               <NavLink to="/profesores">Profesores</NavLink>
+            </li>
+            <li>
+              <span onClick={() => removeToken()}>Cerrar cecion</span>
             </li>
           </ul>
         </nav>
