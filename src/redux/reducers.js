@@ -62,12 +62,12 @@ export const courseReducer = (state = {}, action) => {
 
 export const teacherReducer = (state = {}, action) => {
   if (action.type === GET_ALL_TEACHERS) {
-    return {
-      ...state,
-      teachers: action.teachers,
-    };
+    return action.teachers;
   }
-  return state;
+  return {
+    ...state,
+    teachers: action.teachers,
+  };
 };
 
 export const fragmentReducer = (state = {}, action) => {
