@@ -50,6 +50,22 @@ each class can be made up of different videos.
   **API:**
 
   the local environment it will be use JSON-server to simulate API request to backend server
+  
+  ## screen shot
+
+![](screeShot/Captura1.JPG)
+
+## Login
+![](screeShot/cuenta.JPG)
+
+## specialties page
+![](screeShot/especialidad.JPG)
+
+## course grid
+![](screeShot/grid.JPG)
+
+## Header
+![](screeShot/header.JPG)
 
 ## Available Scripts
 
