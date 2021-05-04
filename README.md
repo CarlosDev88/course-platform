@@ -1,4 +1,4 @@
-the objective is develop anonline education platform. This platform must provide users with the ability to register
+the aplication objetive is develop online education platform. This platform must provide users with the ability to register
 (login) and start studying with the different courses that will be provided. Each course is made up of several classes and
 each class can be made up of different videos.
 
